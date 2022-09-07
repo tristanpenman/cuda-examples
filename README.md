@@ -15,11 +15,12 @@ This repo contains a collection of CUDA examples that were first used for a talk
 
 All examples can be compiled with `nvcc`. Only `02-cuda-hello-world-faster.cu` requires an additional compiler option `--expt-relaxed-constexpr` (at least, when compiled on Linux).
 
+A Makefile has been included, so all examples can built using `make`.
+
 ## Credits
 
-These are all based on examples found in the wild. 03 and 04, in particular, are based on code from Michael Gopshtein's CppCon talk, [CUDA Kernels in C++](https://www.youtube.com/watch?v=HIJTRrm9nzY). And examples 01 and 02 are based on the Vector Addition sample code included in the CUDA Toolkit
+These are all based on examples found in the wild. 03 and 04, in particular, are based on code from Michael Gopshtein's CppCon talk, [CUDA Kernels in C++](https://www.youtube.com/watch?v=HIJTRrm9nzY). And examples 01 and 02 are based on the Vector Addition sample code included in the CUDA Toolkit.
 
 ## License
 
 It seems pretty reasonable to me to consider this example code to be in the public domain.
-
