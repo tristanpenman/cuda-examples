@@ -23,4 +23,4 @@ These are all based on examples found in the wild. 03 and 04, in particular, are
 
 ## License
 
-It seems pretty reasonable to me to consider this example code to be in the public domain.
+This source code has been released into the public domain.

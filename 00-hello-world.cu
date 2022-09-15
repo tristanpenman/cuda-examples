@@ -22,7 +22,7 @@ int main()
         sum += c[i];
     }
 
-    std::cout << "final result " << (sum / n) << std::endl;;
+    std::cout << "final result " << (sum / n) << std::endl;
 
     return 0;
 }
