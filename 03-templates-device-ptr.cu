@@ -3,10 +3,12 @@
 #include <vector>
 
 template<typename T>
-class DevicePtr {
+class DevicePtr
+{
     T *ptr = nullptr;
 
     __device__ __host__ __inline__ DevicePtr(T *ptr) : ptr(ptr) { }
+
 public:
     static DevicePtr<T> fromRaw(T *ptr)
     {
