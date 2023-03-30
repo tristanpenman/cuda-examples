@@ -1,6 +1,6 @@
-CXXFLAGS=-std=c++14 -fmad=false --expt-relaxed-constexpr
+CXXFLAGS=-std=c++14 -fmad=false --expt-relaxed-constexpr --compiler-options -Wall
 LDFLAGS=
-TARGET_ARCH=-arch=sm_30
+TARGET_ARCH=-arch=sm_60
 
 TARGETS=\
 	00-hello-world \

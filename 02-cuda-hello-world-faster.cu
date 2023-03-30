@@ -42,7 +42,7 @@ int main()
     cudaMemcpy(h_c, d_c, bytes, cudaMemcpyDeviceToHost);
 
     double sum = 0;
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         sum += h_c[i];
     }
 

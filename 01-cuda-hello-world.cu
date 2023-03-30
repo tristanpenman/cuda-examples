@@ -17,7 +17,7 @@ int main()
     double *h_a = (double *) malloc(bytes);
     double *h_b = (double *) malloc(bytes);
     double *h_c = (double *) malloc(bytes);  // output vector
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         h_a[i] = sin(i) * sin(i);
         h_b[i] = cos(i) * cos(i);
     }
@@ -38,7 +38,7 @@ int main()
     cudaMemcpy(h_c, d_c, bytes, cudaMemcpyDeviceToHost);
 
     double sum = 0;
-    for (int i = 0; i < n; i++) {
+    for (size_t i = 0; i < n; i++) {
         sum += h_c[i];
     }
 
